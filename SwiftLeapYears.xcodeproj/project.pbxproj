@@ -10,6 +10,7 @@
 		16E43E4D230E85D100ECB492 /* SwiftLeapYears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E43E43230E85D100ECB492 /* SwiftLeapYears.framework */; };
 		16E43E52230E85D100ECB492 /* SwiftLeapYearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E43E51230E85D100ECB492 /* SwiftLeapYearsTests.swift */; };
 		16E43E54230E85D100ECB492 /* SwiftLeapYears.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E43E46230E85D100ECB492 /* SwiftLeapYears.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16E43E60230E877600ECB492 /* Int+isLeapYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E43E5F230E877600ECB492 /* Int+isLeapYear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		16E43E4C230E85D100ECB492 /* SwiftLeapYearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLeapYearsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E43E51230E85D100ECB492 /* SwiftLeapYearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLeapYearsTests.swift; sourceTree = "<group>"; };
 		16E43E53230E85D100ECB492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E43E5F230E877600ECB492 /* Int+isLeapYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+isLeapYear.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				16E43E46230E85D100ECB492 /* SwiftLeapYears.h */,
 				16E43E47230E85D100ECB492 /* Info.plist */,
+				16E43E5F230E877600ECB492 /* Int+isLeapYear.swift */,
 			);
 			path = SwiftLeapYears;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					16E43E42230E85D100ECB492 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					16E43E4B230E85D100ECB492 = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E43E60230E877600ECB492 /* Int+isLeapYear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		16E43E58230E85D100ECB492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.ph9.SwiftLeapYears;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		16E43E59230E85D100ECB492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		16E43E5B230E85D100ECB492 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLeapYearsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		16E43E5C230E85D100ECB492 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLeapYearsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

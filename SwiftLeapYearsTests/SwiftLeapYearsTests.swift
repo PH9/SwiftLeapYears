@@ -3,19 +3,10 @@ import XCTest
 
 class SwiftLeapYearsTests: XCTestCase {
 
-  func test1IsNotLeapYear() {
+  func testIsYearIsDivisibleBy4_mustBeLeapYear() {
     XCTAssertFalse(1.isLeapYear)
-  }
-
-  func test4IsLeapYear() {
     XCTAssertTrue(4.isLeapYear)
-  }
-
-  func test8IsLeapYear() {
     XCTAssertTrue(8.isLeapYear)
-  }
-
-  func test12IsLeapYear() {
     XCTAssertTrue(12.isLeapYear)
   }
 

@@ -3,8 +3,8 @@ import XCTest
 
 class SwiftLeapYearsTests: XCTestCase {
 
-    func test1IsNotLeapYear() {
-      XCTAssertFalse(1.isLeapYear)
-    }
+  func test1IsNotLeapYear() {
+    XCTAssertFalse(1.isLeapYear)
+  }
 
 }

@@ -12,7 +12,7 @@ class SwiftLeapYearsTests: XCTestCase {
   }
 
   func test8IsLeapYear() {
-    XCTAssert(8.isLeapYear)
+    XCTAssertTrue(8.isLeapYear)
   }
 
   func test12IsLeapYear() {

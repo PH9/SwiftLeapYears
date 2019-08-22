@@ -9,7 +9,7 @@ extension Int {
       return false
     }
 
-    if self == 100 {
+    if self % 100 == 0 {
       return false
     }
 

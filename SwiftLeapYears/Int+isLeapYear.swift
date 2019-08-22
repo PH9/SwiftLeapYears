@@ -1,7 +1,7 @@
 extension Int {
 
   var isLeapYear: Bool {
-    if self == 300 {
+    if self % 100 == 0 {
       return false
     }
 

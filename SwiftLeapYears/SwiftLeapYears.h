@@ -1,11 +1,3 @@
-//
-//  SwiftLeapYears.h
-//  SwiftLeapYears
-//
-//  Created by Wasith Theerapattrathamrong on 22/8/2562 BE.
-//  Copyright © 2562 Wasith Theerapattrathamrong. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for SwiftLeapYears.

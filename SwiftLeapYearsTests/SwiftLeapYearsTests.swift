@@ -4,10 +4,10 @@ import XCTest
 class SwiftLeapYearsTests: XCTestCase {
 
   func testIsYearIsDivisibleBy4_mustBeLeapYear() {
-    XCTAssertFalse(1.isLeapYear)
-    XCTAssertTrue(4.isLeapYear)
-    XCTAssertTrue(8.isLeapYear)
-    XCTAssertTrue(12.isLeapYear)
+    XCTAssert(!1.isLeapYear)
+    XCTAssert(4.isLeapYear)
+    XCTAssert(8.isLeapYear)
+    XCTAssert(12.isLeapYear)
   }
 
   func testButYearThatDivisibleBy100_mustNotBeLeapYear() {

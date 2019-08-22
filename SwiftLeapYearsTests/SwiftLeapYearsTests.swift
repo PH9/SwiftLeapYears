@@ -22,4 +22,8 @@ class SwiftLeapYearsTests: XCTestCase {
   func test100IsLeapYear() {
     XCTAssertFalse(100.isLeapYear)
   }
+
+  func test200IsLeapYear() {
+    XCTAssertFalse(200.isLeapYear)
+  }
 }

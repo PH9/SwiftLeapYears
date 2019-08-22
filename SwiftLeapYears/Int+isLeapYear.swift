@@ -5,7 +5,7 @@ extension Int {
       return true
     }
 
-    if self == 800 {
+    if self % 400 == 0 {
       return true
     }
 

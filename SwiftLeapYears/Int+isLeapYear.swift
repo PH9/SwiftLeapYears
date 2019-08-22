@@ -5,10 +5,6 @@ extension Int {
       return false
     }
 
-    if self % 100 == 0 {
-      return false
-    }
-
     if self % 4 == 0 {
       return true
     }

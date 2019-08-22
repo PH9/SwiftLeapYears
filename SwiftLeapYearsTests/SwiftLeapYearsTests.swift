@@ -16,15 +16,9 @@ class SwiftLeapYearsTests: XCTestCase {
     XCTAssert(!300.isLeapYear)
   }
 
-  func test400IsLeapYear() {
+  func testButAgianYearThatDivisibleBy400_mustBeLeapYear() {
     XCTAssert(400.isLeapYear)
-  }
-
-  func test800IsLeapYear() {
     XCTAssert(800.isLeapYear)
-  }
-
-  func test1200IsLeapYear() {
     XCTAssert(1200.isLeapYear)
   }
 }

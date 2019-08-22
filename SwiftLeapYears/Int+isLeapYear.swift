@@ -5,7 +5,7 @@ extension Int {
       return true
     }
 
-    if self == 8 {
+    if self % 4 == 0 {
       return true
     }
 
